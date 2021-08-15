@@ -19,3 +19,11 @@ end
 Then("I should have {string} printed") do |_string|
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+When('the valid? is called') do
+  @card_valid_result = @card.valid?
+end
+
+Then('it should be {word}') do |result|
+  expect(@card_valid_result).to be(result == 'true')
+end
