@@ -3,13 +3,15 @@ module FlybuysCardValidation::Card
   # Represents a Fly Buys cards with ability for validation and type determination
   class Base
 
+    TYPE = "Unknown".freeze
+
     def initialize(number, type: nil)
       @number = number
       @type = type
     end
 
     def type
-      @type || TYPE
+      @type || self.class::TYPE
     end
   
     def self.build(number)
@@ -28,13 +30,11 @@ module FlybuysCardValidation::Card
     end
   
     def self.number_starts_with?(number, prefix)
-      @number.is_a?(String) && @number.start_with?(prefix)
+      number.is_a?(String) && number.start_with?(prefix)
     end
   end
 
-  class Unknown < Base
-    TYPE = "Unknown".freeze
-  end
+  class Unknown < Base; end
 end
 
 require_relative "./black"
