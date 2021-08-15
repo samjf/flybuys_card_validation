@@ -12,7 +12,7 @@ module FlybuysCardValidation
       @card_list_str = card_list_str
     end
 
-    def print_card_validation card
+    def print_card_validation
 
     end
   end
