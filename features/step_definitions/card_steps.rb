@@ -2,6 +2,7 @@ require_relative "../../lib/flybuys_card_validation/card/base"
 
 Given("A card number of {string}") do |_string|
   @card_number = _string
+  @card = FlybuysCardValidation::Card::Base.build(@card_number)
 end
 
 When("the card is created") do
