@@ -52,6 +52,10 @@ module FlybuysCardValidation::Card
       number.is_a?(String) && number.start_with?(prefix)
     end
 
+    def to_s
+      "#{type}: #{@number} (#{valid? ? 'valid' : 'invalid'})"
+    end
+
     private
 
     ##

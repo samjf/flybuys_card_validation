@@ -10,7 +10,7 @@ Feature: We can validate a list of Fly Buys cards.
       6014709045001234
       6014352700000140
       6014355526000020
-      6014 3555 2900 0028
+      6014 3555 2600 0028
       6013111111111111
       """
     When I ask to print if it is valid
