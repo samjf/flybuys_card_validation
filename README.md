@@ -1,5 +1,14 @@
 # Checking Fly Buys Cards
 
+## How to run the tests
+
+Please do the following to setup this project the run the tests:
+
+- clone this repo
+- ensure you are using the Ruby version specified in `.ruby-version`. 
+- run `bundle install` to install the dependencies
+- run `rake` to start the tests (cucumber).
+
 ## Introduction
 
 Develop a Ruby application that solves the problem described below. The aim of the problem is to allow the candidate to *demonstrate their skill and experience* in aspects of the development process including domain modelling, object orientated design, use of language construct and idioms, and testing (unit or otherwise).
