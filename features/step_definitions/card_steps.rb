@@ -6,7 +6,7 @@ Given("A card number of {string}") do |_string|
   @card = FlybuysCardValidation::Card::Base.build(@card_number)
 end
 
-When("the card is created") do
+When("the card is built") do
   @card = FlybuysCardValidation::Card::Base.build(@card_number)
 end
 

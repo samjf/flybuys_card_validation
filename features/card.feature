@@ -1,7 +1,7 @@
 Feature: We have a Fly Buys card with a number, type, and a function to determine if it is valid.
   Scenario: a card can determine its type by the FB number
     Given A card number of <number>
-    When the card is created
+    When the card is built
     Then it should be the type <type>
 
     Examples:
