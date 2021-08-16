@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "flybuys_card_validation/version"
+require_relative "flybuys_card_validation/card/base"
 
 module FlybuysCardValidation
   class Error < StandardError; end
